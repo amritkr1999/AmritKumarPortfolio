@@ -1,14 +1,14 @@
 <h2 align="center">
   Portfolio Website live demo
-  <a href="https://sunilyadavportfolio.netlify.app/" target="_blank">SunilyadavPortfolio</a>
+  <!-- <a href="https://sunilyadavportfolio.netlify.app/" target="_blank">AmritKumarPortfolio</a> -->
 </h2>
-<div align="center">
+<!-- <div align="center">
   <img width="960" alt="image" src="https://user-images.githubusercontent.com/20383021/148535829-e697023d-cf9b-4873-b04c-ab33c465d085.png">
-</div>
+</div> -->
 
 ## Built With
 
-My personal portfolio   <a href="https://sunilyadavportfolio.netlify.app/" target="_blank">https://sunilyadavportfolio.netlify.app/</a> and my personal blog  <a href="http://www.logicstime.com/" target="_blank">http://www.logicstime.com/</a> <br/>
+<!-- My personal portfolio   <a href="https://sunilyadavportfolio.netlify.app/" target="_blank">https://sunilyadavportfolio.netlify.app/</a> and my personal blog  <a href="http://www.logicstime.com/" target="_blank">http://www.logicstime.com/</a> <br/> -->
 
 This project was built using these technologies.
 
