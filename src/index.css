@@ -1,8 +1,75 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import './Assets/design-tokens.css';
+@import './Assets/layout.css';
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: "Raleway", serif !important;
+  padding: 0;
+}
+
+body {
+  background-color: var(--canvas-bg);
+  color: var(--primary-text);
+  font-family: var(--font-body);
+  font-size: var(--sz-body-regular);
+  line-height: var(--lh-body-regular);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35)); */
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Scrollbar matching Warm Minimalist theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--canvas-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--subtle-accent-alpha);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--interactive-focal);
+}
+
+/* Base Headings styling */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--primary-text);
+}
+
+h1 {
+  font-size: var(--sz-heading-1);
+  line-height: var(--lh-heading-1);
+}
+
+h2 {
+  font-size: var(--sz-heading-2);
+  line-height: var(--lh-heading-2);
+}
+
+a {
+  color: var(--interactive-focal);
+  text-decoration: none;
+  transition: var(--btn-transition);
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+/* Utility layout wrapper */
+.container-wrapper {
+  max-width: var(--layout-max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  width: 100%;
 }

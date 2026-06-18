@@ -1,47 +1,45 @@
 import React, { useState, useEffect } from "react";
-import Preloader from "./components/Preloader";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
-import Footer from "./components/Footer";
-import Resume from "./components/Resume/ResumeNew";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./style.css";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import Preloader from "./components/ui/Preloader";
+import Navbar from "./components/ui/Navbar";
+import Footer from "./components/ui/Footer";
+import Prologue from "./features/chronicles/Prologue";
+import Chronicles from "./features/chronicles/Chronicles";
+import Toolkit from "./features/toolkit/Toolkit";
+import Epilogue from "./features/epilogue/Epilogue";
+import { useActiveSection } from "./hooks/useActiveSection";
 
-import ScrollToTop from "./components/ScrollToTop";
+import "./index.css";
 
 function App() {
-  const [load, upadateLoad] = useState(true);
+  const [load, setLoad] = useState(true);
+  const [timelineTechHighlight, setTimelineTechHighlight] = useState(null);
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      upadateLoad(false);
+      setLoad(false);
     }, 1200);
 
     return () => clearTimeout(timer);
   }, []);
 
+  const activeSection = useActiveSection(["prologue", "chronicles", "toolkit", "epilogue"], {
+    rootMargin: "-45% 0px -45% 0px",
+  });
+
   return (
-    <Router>
-      {load ? (
-        <Preloader load={load} />
-      ) : (
-        <div className="App" id={load ? "no-scroll" : "scroll"}>
-          <Navbar />
-          <ScrollToTop />
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/project" component={Projects} />
-            <Route path="/about" component={About} />
-            <Route path="/resume" component={Resume} />
-          </Switch>
+    <>
+      <Preloader load={load} />
+      {!load && (
+        <div className="App" id="scroll">
+          <Navbar activeSection={activeSection || "prologue"} />
+          <Prologue />
+          <Chronicles timelineTechHighlight={timelineTechHighlight} />
+          <Toolkit setTimelineTechHighlight={setTimelineTechHighlight} />
+          <Epilogue />
           <Footer />
         </div>
       )}
-    </Router>
+    </>
   );
 }
 
