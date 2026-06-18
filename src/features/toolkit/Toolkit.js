@@ -1,13 +1,12 @@
 import React from "react";
 
 const FRONTEND_TECHS = [
-  { name: "ReactJs", rating: 4 },
+  { name: "React 18", rating: 4 },
   { name: "TypeScript", rating: 4 },
-  { name: "Redux", rating: 4 },
   { name: "JavaScript", rating: 4 },
-  { name: "GraphQL", rating: 4 },
-  { name: "Shopify Polaris", rating: 4 },
-  { name: "Apollo", rating: 4 },
+  { name: "Material UI", rating: 4 },
+  { name: "Vite", rating: 4 },
+  { name: "Angular", rating: 3 },
   { name: "Html", rating: 4 },
   { name: "CSS", rating: 4 },
 ];
@@ -15,10 +14,12 @@ const FRONTEND_TECHS = [
 const BACKEND_TECHS = [
   { name: "Java", rating: 4 },
   { name: "Spring Boot", rating: 4 },
+  { name: "Hibernate/JPA", rating: 4 },
   { name: "PostgreSQL", rating: 4 },
-  { name: "Nodejs", rating: 3 },
-  { name: "Koajs", rating: 3 },
-  { name: "Git", rating: 4 },
+  { name: "Spring Security", rating: 4 },
+  { name: "RESTful APIs", rating: 4 },
+  { name: "Python", rating: 3 },
+  { name: "SQL", rating: 4 },
 ];
 
 export default function Toolkit({ setTimelineTechHighlight }) {

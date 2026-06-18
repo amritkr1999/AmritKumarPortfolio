@@ -132,8 +132,8 @@ export default function Epilogue() {
 
               <div className="postcard-address-lines">
                 <div className="postcard-address-line">To: Amrit Kumar</div>
-                <div className="postcard-address-line">Software Engineer</div>
-                <div className="postcard-address-line">Github: amritkr1999</div>
+                <div className="postcard-address-line">Full Stack Developer</div>
+                <div className="postcard-address-line">Github: amritkr</div>
                 <div className="postcard-address-line">Ranchi, India</div>
               </div>
 

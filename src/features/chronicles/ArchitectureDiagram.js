@@ -90,7 +90,7 @@ export default function ArchitectureDiagram({ activeStep, onNodeClick }) {
           <circle cx="250" cy="160" r="2" fill="var(--canvas-bg)" />
           
           <text x="240" y="225" className="node-text">
-            API GATEWAY
+            SPRING BOOT
           </text>
         </g>
 
@@ -113,7 +113,7 @@ export default function ArchitectureDiagram({ activeStep, onNodeClick }) {
           />
           
           <text x="400" y="225" className="node-text">
-            AZURE COSMOS
+            POSTGRESQL
           </text>
         </g>
       </svg>
