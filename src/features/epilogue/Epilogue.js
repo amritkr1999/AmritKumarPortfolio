@@ -134,7 +134,7 @@ export default function Epilogue() {
                 <div className="postcard-address-line">To: Amrit Kumar</div>
                 <div className="postcard-address-line">Software Engineer</div>
                 <div className="postcard-address-line">Github: amritkr1999</div>
-                <div className="postcard-address-line">Lucknow, India</div>
+                <div className="postcard-address-line">Ranchi, India</div>
               </div>
 
               <div style={{ fontFamily: "var(--font-mono)", fontSize: "10px", color: "var(--subtle-accent-alpha)" }}>
