@@ -1,40 +1,67 @@
-<h2 align="center">
-  Portfolio Website live demo
-  <!-- <a href="https://sunilyadavportfolio.netlify.app/" target="_blank">AmritKumarPortfolio</a> -->
-</h2>
-<!-- <div align="center">
-  <img width="960" alt="image" src="https://user-images.githubusercontent.com/20383021/148535829-e697023d-cf9b-4873-b04c-ab33c465d085.png">
-</div> -->
+# The Storyteller Portfolio — Amrit Kumar
 
-## Built With
+A premium, highly interactive personal website designed to showcase professional software engineering capabilities through a scroll-driven narrative interface. Built on a warm, low-contrast **Warm Minimalist** design system that balances organic elements with technical depth.
 
-<!-- My personal portfolio   <a href="https://sunilyadavportfolio.netlify.app/" target="_blank">https://sunilyadavportfolio.netlify.app/</a> and my personal blog  <a href="http://www.logicstime.com/" target="_blank">http://www.logicstime.com/</a> <br/> -->
+## 🛠️ Built With
 
-This project was built using these technologies.
+- **React.js (v17)** — Core framework platform
+- **Vanilla CSS (Custom Tokens)** — Dynamic styles, layouts, and custom scroll behaviors
+- **SVG Canvas** — Interactive systems topology and data path vectors
+- **Typewriter Effect** — Animated typing loops
+- **Axios / Fetch** — Mock telemetry integrations
 
-- React.js
-- CSS3
-- VsCode
+---
 
-## Features
+## 🎨 Key Features
 
-**📖 Multi-Page Layout**
+*   **Chapter 1: The Prologue (Hero Canvas)**  
+    Welcomes users with a soft opacity transition, typing animation loops, and a custom avatar wrapped in an organic fluid morphing shape.
+*   **Chapter 2: The Chronicles (Timeline Split-Pane)**  
+    Locks the viewport vertically and features a **Narrative Thread Line** that draws itself down the page dynamically as the user scrolls. Renders a sticky **System Architecture Diagram** showing Frontend, API Gateway, and Cosmos DB storage layers with animated data packets pulsing along the paths.
+*   **Interactive Blueprint Modal**  
+    Clicking SVG nodes in the architecture topology opens an in-place details overlay showing technical roles, frameworks, and design patterns.
+*   **Chapter 3: The Toolkit (Bookshelves)**  
+    Organizes skillset proficiencies into Backend Systems and Frontend Frameworks bookshelves. Hovering over a tech card dims unrelated timeline cards in Chapter 2, drawing immediate visual focus to the projects that utilized that technology.
+*   **Chapter 4: The Epilogue (Postcard & Coffee Checkout)**  
+    Includes a contact box styled like a handwritten postcard and a simulated payment gateway. Clicking "Gift a Cup" dynamically transforms the button area into a credit card transaction module.
+*   **Live System Diagnostics**  
+    Displays active status parameters (pings mock health endpoint) and real-time database connection latency in the footer metrics.
 
-**🎨 Styled with React-Bootstrap and Css with easy to customize colors**
+---
 
-**📱 Fully Responsive**
+## 🚀 Getting Started
 
-## Getting Started
+### Prerequisites
 
-Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
+You will need `Node.js` (v14 or higher recommended) and `git` installed on your machine.
 
-## 🛠 Installation and Setup Instructions
+### Installation
 
-1. Installation: `npm install`
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/amritkr1999/AmritKumarPortfolio.git
+   ```
+2. Install project dependencies:
+   ```bash
+   npm install
+   ```
 
-2. In the project directory, you can run: `npm start`
+### Running Locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-The page will reload if you make edits.
+To launch the project in development mode:
+```bash
+npm start
+```
+Open [http://localhost:3000](http://localhost:3000) to view the interactive storyteller portfolio in your browser.
 
+### Deployment
+
+To compile and package optimized production bundles:
+```bash
+npm run build
+```
+
+The application is configured to deploy to GitHub Pages under the `homepage` configuration in `package.json`. To push updates:
+```bash
+npm run deploy
+```
