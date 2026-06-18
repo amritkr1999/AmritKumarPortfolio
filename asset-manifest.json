@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/AmritKumarPortfolio/static/css/main.ff89d5b2.css",
-    "main.js": "/AmritKumarPortfolio/static/js/main.80800d8e.js",
+    "main.js": "/AmritKumarPortfolio/static/js/main.82cb7b0d.js",
     "static/media/IMG_3572.jpg": "/AmritKumarPortfolio/static/media/IMG_3572.768a33bd917b04d04da7.jpg",
     "static/media/Amrit_Resume.pdf": "/AmritKumarPortfolio/static/media/Amrit_Resume.1e2f1f2de935685259cf.pdf",
     "index.html": "/AmritKumarPortfolio/index.html",
     "main.ff89d5b2.css.map": "/AmritKumarPortfolio/static/css/main.ff89d5b2.css.map",
-    "main.80800d8e.js.map": "/AmritKumarPortfolio/static/js/main.80800d8e.js.map"
+    "main.82cb7b0d.js.map": "/AmritKumarPortfolio/static/js/main.82cb7b0d.js.map"
   },
   "entrypoints": [
     "static/css/main.ff89d5b2.css",
-    "static/js/main.80800d8e.js"
+    "static/js/main.82cb7b0d.js"
   ]
 }
